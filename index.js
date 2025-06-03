@@ -16,7 +16,7 @@ app.get('/api/news', async (req, res) => {
   try {
     const response = await axios.get('https://newsapi.org/v2/everything', {
       params: {
-        q: 'business OR startup',
+        q: 'Indian Business or Indian Startup',
         language: 'en',
         sortBy: 'publishedAt',
         pageSize: 10,
